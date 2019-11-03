@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>My first web-page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+      <div id="container">
+    <header>
+        <h1>Hello colleagues!!!</h1>
+        <div class="ie-container"> <img src="family.jpg">
+        <div class="borderbox"></div>
+        </div>
+        <!--<img src="family.jpg">-->
+        <p>Hi there! I'm Teodor and I'm looking forward to start my challenge and the pleasure to be among you at the Codaisseur course.</p>
+    </header>
+    <section id="about" onmouseover = "aboutHover()" onmouseout = "aboutNormal()">
+        <h2>
+          ...about
+          <!--<i class="fa fa-info" aria-hidden="true"></i>-->
+        </h2>
+        <p>I moved to The Netherlands in March 2019 with my wife and two children. So, I’m a happy father of two funny and very smart kids and this is the most important role I’m playing.</p>
+    </section>
+    <section id="roots" onmouseover = "rootsHover()" onmouseout = "rootsNormal()">
+        <h2>
+          ...roots
+          <!--<i class="fa fa-info" aria-hidden="true"></i>-->
+        </h2>
+            <p>So, I was born in Moldova but I grew up in Ukraine where I've graduated from secondary school. 
+              After, I mooved to Moldova where I finished the university in Chisinau and I've created my family. 
+              Moldova is a post-soviet country between Ukraine and Romania, under a powerfull russian influence, 
+              with the unsolved Transnistria territory problem and absolutely corrupted government institutions.
+              My kids are 4 y.o. and 7 y.o. and they are the reason we left Moldova, for their future and for 
+              giving them the possibility to grow up in a more friendly environment.
+              </p>
+    </section>
+    <section id="experience" onmouseover = "experienceHover()" onmouseout = "experienceNormal()">
+        <h2>
+          ...experience
+          <!--<i class="fa fa-info" aria-hidden="true"></i>-->
+        </h2>
+            <p>I’ve worked for 15 years as an accountant in Moldova. Also I’ve been a part of the 
+              IT developers team that was implementing accounting software to other entities. But 
+              I was doing only the project-planning work and post-implementation consultation, so 
+              the codding magic was happening always around me but seemd to be so unachievable... After 
+              we moved to the Netherlands, I've worked for a season in a beach club restaurant, as a 
+              sous-chef and as I can see it now, it was the big challenge in my life where I tried 
+              to afford the improvisation world of kitchen. At the moment, I feel another chalenge 
+              of being at Codasseur, to learn codding and to try writting the code by myself...
+            </p>
+    </section>
+    <div class="wrapper">
+      <h2>...Socialize</h2> 
+      <div class="media">
+        <ul>
+          <li><a href = "mailto: teomitioglo@gmail.com" target="_blank">
+            <i class="fa fa-envelope" aria-hidden="true"></i></a>
+          </li>
+          <li><a href="https://linkedin.com/in/teodor-mitioglo-b434795b" target="_blank">
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+          </li>
+          <li><a href="https://github.com/ilteelte" target="_blank">
+            <i class="fa fa-github-square" aria-hidden="true"></i></a>
+          </li>
+        </ul>
+      </div>
+  </div>
+
+    <script>
+
+      function aboutHover(){
+        document.getElementById('about').firstElementChild.firstElementChild.style.fontSize = "200%";
+      }
+      function aboutNormal(){
+        document.getElementById('about').firstElementChild.firstElementChild.style.fontSize = "100%";
+      }
+      function experienceHover(){
+        document.getElementById('experience').firstElementChild.firstElementChild.style.fontSize = "200%";
+      }
+      function experienceNormal(){
+        document.getElementById('experience').firstElementChild.firstElementChild.style.fontSize = "100%";
+      }
+      function rootsHover(){
+        document.getElementById('roots').firstElementChild.firstElementChild.style.fontSize = "200%";
+      }
+      function rootsNormal(){
+        document.getElementById('roots').firstElementChild.firstElementChild.style.fontSize = "100%";
+      }
+    </script>
+  </body>
+</html>
